@@ -6,6 +6,7 @@
     "allowJs": true,
     "target": "ES6",
     "moduleResolution": "node",
+    "baseUrl": ".",
     "paths": {
       "@styles/*": ["./src/client/styles/*"],
       "@ui/*": ["./src/client/layout/ui/*"]

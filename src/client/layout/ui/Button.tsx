@@ -1,9 +1,19 @@
 import React from "react";
-import ButtonUI from "@styles/base/ButtonUI";
+import ButtonUI from "@styles/ui/ButtonUI";
 
-// eslint-disable-next-line react/prop-types
-const Button: React.FC = ({ children }) => {
-  return <ButtonUI>{children}</ButtonUI>;
+interface ButtonProps {
+  /**
+   * Button contents
+   */
+  label: string;
+  /**
+   * Optional click handler
+   */
+  onClick?: () => void;
+}
+
+const Button: React.FC<ButtonProps> = ({ label, ...props }) => {
+  return <ButtonUI {...props}>{label}</ButtonUI>;
 };
 
 export default Button;
