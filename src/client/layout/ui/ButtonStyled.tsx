@@ -1,5 +1,5 @@
 import React from "react";
-import ButtonUI from "@styles/ui/ButtonUI";
+import ButtonStyled from "@styles/ui/ButtonStyled";
 
 interface ButtonProps {
   /**
@@ -13,7 +13,7 @@ interface ButtonProps {
 }
 
 const Button: React.FC<ButtonProps> = ({ label, ...props }) => {
-  return <ButtonUI {...props}>{label}</ButtonUI>;
+  return <ButtonStyled {...props}>{label}</ButtonStyled>;
 };
 
 export default Button;

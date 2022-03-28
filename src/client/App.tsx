@@ -1,13 +1,9 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-import styled from "styled-components";
-import Button from "@ui/Button";
+import Button from "@ui/ButtonStyled";
+import Container from "@styles/ContainerStyle";
 
 const App: React.FC = () => {
-  const Container = styled.div`
-    text-align: center;
-  `;
-
   return (
     <>
       <Helmet>

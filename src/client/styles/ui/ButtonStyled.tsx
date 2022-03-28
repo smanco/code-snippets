@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const ButtonUI = styled.button`
+const ButtonStyled = styled.button`
   background: tomato;
   border-radius: 3px;
   padding: 0.5em 1em;
@@ -8,4 +8,4 @@ const ButtonUI = styled.button`
   color: white;
 `;
 
-export default ButtonUI;
+export default ButtonStyled;
