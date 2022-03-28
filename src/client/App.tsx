@@ -41,7 +41,7 @@ const App: React.FC = () => {
           <del>Express</del>
         </div>
         <hr />
-        <Button>Button</Button>
+        <Button label="Button" />
       </Container>
     </>
   );
