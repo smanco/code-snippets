@@ -11,12 +11,12 @@ const App: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>Graphbook - Home page</title>
-        <meta name="description" content="Graphbook home page" />
+        <title>Code Snippets - Home page</title>
+        <meta name="description" content="Code Snippets home page" />
       </Helmet>
       <Container>
-        <h1>Graphbook</h1>
-        <h3>ToDo list</h3>
+        <h1>Code Snippets</h1>
+        <h3>TODO LIST</h3>
         <h5>CLIENT</h5>
         <div>
           <del>Helmet</del>
