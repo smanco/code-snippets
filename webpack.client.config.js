@@ -1,30 +1,34 @@
-const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const path = require("path");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
-const buildDirectory = 'dist';
+const buildDirectory = "dist";
 const outputDirectory = `${buildDirectory}/client`;
 module.exports = {
-  mode: 'development',
-  entry: './src/client/index.tsx',
+  mode: "development",
+  entry: "./src/client/index.tsx",
   output: {
     path: path.join(__dirname, outputDirectory),
-    filename: 'bundle.js',
+    filename: "bundle.js",
   },
   resolve: {
-    extensions: ['*', '.js', '.jsx', '.ts', '.tsx'],
+    extensions: ["*", ".js", ".jsx", ".ts", ".tsx"],
+    alias: {
+      "@styles": path.resolve(process.cwd(), "./src/client/styles"),
+      "@ui": path.resolve(process.cwd(), "./src/client/layout/ui"),
+    },
   },
   module: {
     rules: [
       {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
-        use: ['babel-loader'],
+        use: ["babel-loader"],
       },
-      { test: /\.(ts|tsx)?$/, loader: 'ts-loader' },
+      { test: /\.(ts|tsx)?$/, loader: "ts-loader" },
       {
         test: /\.css$/,
-        use: ['style-loader', 'css-loader'],
+        use: ["style-loader", "css-loader"],
       },
     ],
   },
@@ -37,7 +41,7 @@ module.exports = {
       cleanOnceBeforeBuildPatterns: [path.join(__dirname, buildDirectory)],
     }),
     new HtmlWebpackPlugin({
-      template: './public/index.html',
+      template: "./public/index.html",
     }),
   ],
 };
