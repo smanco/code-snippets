@@ -14,28 +14,32 @@ const App: React.FC = () => {
         <h1>Code Snippets</h1>
         <h3>TODO LIST</h3>
         <h5>CLIENT</h5>
-        <div>
-          <del>Helmet</del>
-        </div>
-        <div>
-          <del>Styled-components</del>
-        </div>
-        <div>
-          <del>Production bundle</del>
-        </div>
-        <div>
-          <del>Typescript</del>
-        </div>
-        <div>
-          <del>Storybook</del>
-        </div>
-        <div>Storybook components</div>
-        <div>Global theme</div>
-        <div>test</div>
+        <ul>
+          <li>
+            <del>Helmet</del>
+          </li>
+          <li>
+            <del>Styled-components</del>
+          </li>
+          <li>
+            <del>Production bundle</del>
+          </li>
+          <li>
+            <del>Typescript</del>
+          </li>
+          <li>
+            <del>Storybook</del>
+          </li>
+          <li>Storybook components</li>
+          <li>Global theme</li>
+          <li>test</li>
+        </ul>
         <h5>SERVER</h5>
-        <div>
-          <del>Express</del>
-        </div>
+        <ul>
+          <li>
+            <del>Express</del>
+          </li>
+        </ul>
         <hr />
         <Button label="Button" />
       </Container>
