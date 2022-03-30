@@ -1,5 +1,5 @@
 const fonts = {
-  bodyFonts: "'Roboto', sans-serif",
+  fontFamily: "'Roboto', sans-serif",
 };
 
 export default fonts;

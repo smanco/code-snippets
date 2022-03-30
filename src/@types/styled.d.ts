@@ -4,7 +4,7 @@ import "styled-components";
 // and extend them!
 declare module "styled-components" {
   export interface DefaultTheme {
-    bodyFonts: string;
+    fontFamily: string;
     background: string;
     color: string;
     primary: Record<number, string>;
